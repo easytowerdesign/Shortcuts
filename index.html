@@ -13,6 +13,7 @@
             padding: 20px;
             line-height: 1.6;
             color: #333;
+            background-color: #f5f5f5;
         }
 
         h1 {
@@ -27,16 +28,16 @@
         }
 
         .section {
-            background-color: #f7f7f7;
-            padding: 15px;
-            border-radius: 8px;
+            background: white;
+            padding: 20px;
             margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
         }
 
-        img {
-            max-width: 100%;
-            border: 1px solid #ccc;
-            margin-top: 10px;
+        .shortcut {
+            font-weight: bold;
+            color: #005a9c;
         }
 
         ul li,
@@ -44,73 +45,80 @@
             margin-bottom: 8px;
         }
 
-        .shortcut {
-            font-weight: bold;
-            color: #005a9c;
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-<h1>Bluebeam Revu Quick Reference</h1>
+    <h1>Bluebeam Revu Quick Reference</h1>
 
-<div class="section">
-    <h2>Keyboard Shortcuts</h2>
-    <ul>
-        <li><span class="shortcut">L</span> - Line</li>
-        <li><span class="shortcut">R</span> - Rectangle</li>
-        <li><span class="shortcut">C</span> - Cloud</li>
-        <li><span class="shortcut">E</span> - Ellipse</li>
-        <li><span class="shortcut">P</span> - Sketch Free Hand</li>
-        <li><span class="shortcut">T</span> - Text Box</li>
-        <li><span class="shortcut">M</span> - Measure</li>
-        <li><span class="shortcut">Alt + 0176</span> - Degree Symbol (°)</li>
-        <li><span class="shortcut">Alt + 0216</span> - Diameter Symbol (Ø)</li>
-    </ul>
-</div>
+    <div class="section">
+        <h2>Keyboard Shortcuts</h2>
+        <ul>
+            <li><span class="shortcut">L</span> - Line</li>
+            <li><span class="shortcut">R</span> - Rectangle</li>
+            <li><span class="shortcut">C</span> - Cloud</li>
+            <li><span class="shortcut">E</span> - Ellipse</li>
+            <li><span class="shortcut">P</span> - Sketch Free Hand</li>
+            <li><span class="shortcut">T</span> - Text Box</li>
+            <li><span class="shortcut">M</span> - Measure</li>
+            <li><span class="shortcut">Alt + 0176</span> - Degree Symbol (°)</li>
+            <li><span class="shortcut">Alt + 0216</span> - Diameter Symbol (Ø)</li>
+        </ul>
+    </div>
 
-<div class="section">
-    <h2>Pinning a Document</h2>
+    <div class="section">
+        <h2>Pinning a Document</h2>
 
-    <ol>
-        <li>Open the File Access panel.</li>
-        <li>Locate the desired PDF under Recent Files.</li>
-        <li>Right-click the file.</li>
-        <li>Select <strong>Pin → Pin File</strong>.</li>
-        <li>The file will appear in the <strong>Pinned</strong> section for quick access.</li>
-    </ol>
+        <ol>
+            <li>Open the <strong>File Access</strong> panel.</li>
+            <li>Locate the desired PDF under <strong>Recents</strong>.</li>
+            <li>Right-click the file.</li>
+            <li>Select <strong>Pin → Pin File</strong>.</li>
+            <li>The document will appear in the <strong>Pinned</strong> section for quick access.</li>
+        </ol>
 
-    <p><strong>Example:</strong></p>
+        <p><strong>Example:</strong></p>
 
-    <!-- Save the image as pin-file.png in the same folder as index.html -->
-    pin-file.png
-</div>
+        <img src="image1.png" alt="Bluebeam Pin File Example">
 
-<div class="section">
-    <h2>Convert Rectangle to Highlight</h2>
-    <ol>
-        <li>Draw a rectangle around the desired text.</li>
-        <li>Select the rectangle.</li>
-        <li>Open the Properties panel.</li>
-        <li>Set Fill Color to yellow (or preferred highlight color).</li>
-        <li>Reduce Opacity to approximately 20% to 40%.</li>
-        <li>Set the border color to match the fill color or make it transparent.</li>
-        <li>The rectangle will function as a text highlight while remaining editable.</li>
-    </ol>
-</div>
+    </div>
 
-<div class="section">
-    <h2>Compare Documents</h2>
-    <ol>
-        <li>Select <strong>Document → Compare Documents</strong>.</li>
-        <li>Choose the original PDF.</li>
-        <li>Choose the revised PDF.</li>
-        <li>Review page alignment settings if prompted.</li>
-        <li>Click <strong>OK</strong>.</li>
-        <li>Bluebeam creates a new PDF showing all detected differences.</li>
-        <li>Review the resulting markups to identify changes quickly.</li>
-    </ol>
-</div>
+    <div class="section">
+        <h2>Convert Rectangle to Highlight</h2>
+
+        <ol>
+            <li>Draw a rectangle around the text you want to highlight.</li>
+            <li>Select the rectangle.</li>
+            <li>Open the <strong>Properties</strong> panel.</li>
+            <li>Set the <strong>Fill Color</strong> to yellow (or another highlight color).</li>
+            <li>Reduce the <strong>Opacity</strong> to approximately 20% to 40%.</li>
+            <li>Set the border color to match the fill color or make it transparent.</li>
+            <li>The rectangle will now function as a text highlight while remaining editable.</li>
+        </ol>
+
+    </div>
+
+    <div class="section">
+        <h2>Compare Documents</h2>
+
+        <ol>
+            <li>Select <strong>Document → Compare Documents</strong>.</li>
+            <li>Choose the original PDF.</li>
+            <li>Choose the revised PDF.</li>
+            <li>Review page alignment settings if prompted.</li>
+            <li>Click <strong>OK</strong>.</li>
+            <li>Bluebeam creates a new PDF highlighting all detected differences.</li>
+            <li>Review the generated markups to quickly identify changes between document revisions.</li>
+        </ol>
+
+    </div>
 
 </body>
 </html>
