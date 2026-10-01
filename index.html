@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
             line-height: 1.6;
@@ -24,13 +24,13 @@
 
         h2 {
             color: #005a9c;
-            margin-top: 30px;
+            margin-top: 0;
         }
 
         .section {
             background: white;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             border-radius: 8px;
             box-shadow: 0 1px 4px rgba(0,0,0,0.1);
         }
@@ -50,6 +50,13 @@
             height: auto;
             border: 1px solid #ccc;
             border-radius: 4px;
+            margin-top: 15px;
+        }
+
+        .note {
+            background-color: #eef7ff;
+            border-left: 4px solid #005a9c;
+            padding: 10px;
             margin-top: 10px;
         }
     </style>
@@ -60,6 +67,7 @@
 
     <div class="section">
         <h2>Keyboard Shortcuts</h2>
+
         <ul>
             <li><span class="shortcut">L</span> - Line</li>
             <li><span class="shortcut">R</span> - Rectangle</li>
@@ -78,15 +86,19 @@
 
         <ol>
             <li>Open the <strong>File Access</strong> panel.</li>
-            <li>Locate the desired PDF under <strong>Recents</strong>.</li>
+            <li>Locate the document under <strong>Recents</strong>.</li>
             <li>Right-click the file.</li>
             <li>Select <strong>Pin → Pin File</strong>.</li>
             <li>The document will appear in the <strong>Pinned</strong> section for quick access.</li>
         </ol>
 
+        <div class="note">
+            Tip: Pinned files remain readily accessible from the File Access panel.
+        </div>
+
         <p><strong>Example:</strong></p>
 
-        <img src="image1.png" alt="Bluebeam Pin File Example">
+        <img src="image1.png" alt="Pinning a Document Example">
 
     </div>
 
@@ -94,14 +106,16 @@
         <h2>Convert Rectangle to Highlight</h2>
 
         <ol>
-            <li>Draw a rectangle around the text you want to highlight.</li>
-            <li>Select the rectangle.</li>
-            <li>Open the <strong>Properties</strong> panel.</li>
-            <li>Set the <strong>Fill Color</strong> to yellow (or another highlight color).</li>
-            <li>Reduce the <strong>Opacity</strong> to approximately 20% to 40%.</li>
-            <li>Set the border color to match the fill color or make it transparent.</li>
-            <li>The rectangle will now function as a text highlight while remaining editable.</li>
+            <li>Select the rectangle markup.</li>
+            <li>Right-click the rectangle.</li>
+            <li>Select <strong>Change Markup Type → Highlight</strong>.</li>
+            <li>The rectangle will be converted into a highlight markup.</li>
+            <li>Adjust color and appearance as required.</li>
         </ol>
+
+        <p><strong>Example:</strong></p>
+
+        <img src="image2.png" alt="Convert Rectangle to Highlight Example">
 
     </div>
 
@@ -112,13 +126,6 @@
             <li>Select <strong>Document → Compare Documents</strong>.</li>
             <li>Choose the original PDF.</li>
             <li>Choose the revised PDF.</li>
-            <li>Review page alignment settings if prompted.</li>
+            <li>Confirm page alignment settings if prompted.</li>
             <li>Click <strong>OK</strong>.</li>
-            <li>Bluebeam creates a new PDF highlighting all detected differences.</li>
-            <li>Review the generated markups to quickly identify changes between document revisions.</li>
-        </ol>
-
-    </div>
-
-</body>
-</html>
+            <li>Bluebeam generates a new PDF
